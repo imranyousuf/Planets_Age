@@ -1,0 +1,221 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context=".MainConvertActivity"
+        android:id="@+id/thisViewId">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Venus"
+            android:id="@+id/textVenus"
+            android:textSize="40sp"
+            android:layout_alignTop="@+id/textMercury"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Mercury"
+            android:id="@+id/textMercury"
+            android:layout_marginTop="25dp"
+            android:textSize="40sp"
+            android:layout_below="@+id/solarChoices"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Mars"
+            android:id="@+id/textMars"
+            android:textSize="40sp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/textMercury"
+            android:layout_marginTop="90dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Jupiter"
+            android:id="@+id/textJupiter"
+
+            android:layout_alignParentRight="true"
+            android:textSize="40sp"
+            android:layout_alignTop="@+id/textEarth"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Saturn"
+            android:id="@+id/textSaturn"
+            android:textSize="40sp"
+            android:layout_alignTop="@+id/textMars"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Uranus"
+            android:id="@+id/textUranus"
+            android:textSize="40sp"
+            android:layout_alignTop="@+id/textNeptune"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Neptune"
+            android:id="@+id/textNeptune"
+            android:textSize="40sp"
+            android:layout_below="@+id/textMars"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="50dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Earth"
+            android:id="@+id/textEarth"
+            android:textSize="40sp"
+            android:layout_below="@+id/textNeptune"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="50dp" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/solarChoices"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:prompt="@string/default_spinner"
+            android:layout_toStartOf="@+id/textJupiter"
+            android:layout_toLeftOf="@+id/textEarth"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="50dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:maxLength="10"
+            android:id="@+id/editYears"
+            android:layout_toEndOf="@+id/textVenus"
+            android:autoText="false"
+            android:singleLine="true"
+            android:hint="Input An Age"
+            android:layout_alignParentTop="true"
+
+            android:layout_alignLeft="@+id/textMercury"
+            android:layout_alignStart="@+id/textMercury"
+            android:layout_marginRight="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/mercuryAge"
+            android:layout_below="@+id/textMercury"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/venusAge"
+            android:layout_below="@+id/textVenus"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/earthAge"
+            android:layout_below="@+id/textEarth"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/marsAge"
+            android:layout_below="@+id/textMars"
+            android:layout_alignParentLeft="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/jupiterAge"
+            android:layout_below="@+id/textJupiter"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/saturnAge"
+            android:layout_below="@+id/textSaturn"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/neptuneAge"
+            android:layout_below="@+id/textNeptune"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/uranusAge"
+            android:layout_below="@+id/textUranus"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+</ScrollView>
